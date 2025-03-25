@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil 4 - Remake</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        @media (max-width: 768px) {
+    .banner {
+        background-image: url('img/41ecaa8e582031837d05a6908cd30571.jpg'); 
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="burger-menu">☰</div> 
+        <nav>
+            <ul class="menu-desktop">
+                <li><a href="index.html">Accueil</a></li>
+        <li><a href="#actualites">Actualités</a></li>
+        <li><a href="mailto:tonemail@example.com">Contact</a></li>
+        <li><a href="https://store.steampowered.com/app/2050650/?snr=1_5_9__205" target="_blank">ACHETER</a></li>
+            </ul>
+
+            <ul class="menu-mobile">
+                <li><a href="index.html">Accueil</a></li>
+        <li><a href="#actualites">Actualités</a></li>
+        <li><a href="mailto:tonemail@example.com">Contact</a></li>
+        <li><a href="https://store.steampowered.com/app/2050650/?snr=1_5_9__205" target="_blank">ACHETER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <img src="img/Resident_Evil_4_Logo_Light_Outlined.png" alt="Resident Evil 4 Logo" class="banner-logo">
+            <p>REDÉCOUVREZ UN CLASSIQUE</p>
+        </div>
+    </div>
+
+    <section class="intro">
+        <h2>SURVIVEZ. COMBATTEZ. DÉCOUVREZ.</h2>
+        <p>Découvrez une refonte complète de l’un des jeux les plus emblématiques de la série Resident Evil...</p>
+        <button class="btn">En savoir +</button>
+    </section>
+
+    <section id="actualites">
+        <h2>ACTUALITÉS</h2>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="img/new-monsters.jpg" alt="Nouveaux monstres">
+                <h3>Nouveaux monstres</h3>
+                <p>Découvrez les nouvelles créatures effrayantes...</p>
+            </div>
+            <div class="news-item">
+                <img src="img/new-graphism.jpg" alt="Mise à jour graphique">
+                <h3>Mise à jour graphique</h3>
+                <p>Expérimentez Resident Evil 4 comme jamais auparavant...</p>
+            </div>
+            <div class="news-item">
+                <img src="img/new-gameplay.jpeg" alt="Gameplay amélioré">
+                <h3>Gameplay amélioré</h3>
+                <p>Profitez d’une expérience de jeu améliorée...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <h2>ABONNEZ-VOUS À NOTRE NEWSLETTER</h2>
+            <div class="newsletter-input">
+                <input type="email" placeholder="Entrez votre email">
+                <button class="btn">S'abonner</button>
+            </div>
+        </div>
+        <p>&copy; 2024 Resident Evil 4</p>
+    </footer>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/Resident_Evil_4_Logo_Light_Outlined.png" alt="Resident Evil 4 Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">Mentions Légales</a>
+                <span>|</span>
+                <a href="#">Politique de confidentialité</a>
+                <span>|</span>
+                <a href="#">Préférences en matière de cookies</a>
+                <span>|</span>
+                <a href="#">Public Ciblées</a>
+                <span>|</span>
+                <a href="#">Recrutement</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const burger = document.querySelector(".burger-menu");
+            const menu = document.querySelector(".menu-mobile");
+
+            burger.addEventListener("click", function () {
+                menu.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
